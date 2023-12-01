@@ -1,7 +1,7 @@
-# Cowsay
+# Tauri + Svelte + Typescript
 
-Cowsay is a desktop app inspired by the [npm package](https://www.npmjs.com/package/cowsay).
+This template should help get you started developing with Tauri, Svelte and TypeScript in Vite.
 
-I made it to test tauri updates over TOR with TORProject's new [pure rust client](https://gitlab.torproject.org/tpo/core/arti).
+## Recommended IDE Setup
 
-Hopefully it can be used to test other [Tauri](tauri.app) experiments.
+[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
