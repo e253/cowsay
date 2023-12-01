@@ -23,6 +23,19 @@
   text-align: center;
 }
 
+.cow {
+  margin-bottom: 5rem;
+}
+
+.cowsay {
+  font-weight: 700;
+}
+
+.cowsay-msg {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
