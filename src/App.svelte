@@ -70,6 +70,6 @@
   {:else if updateState === "updateDownloading"}
     <p>Update is Beind Downloaded</p>
   {:else}
-    <p>Restarting Application</p>
+    <p>Please Restart for the Update to Take Effect</p>
   {/if}
 </div>
