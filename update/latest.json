@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "notes": "See the assets to download and install this version.",
+  "pub_date": "2023-12-05T07:59:25.407Z",
+  "platforms": {
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNEpqN2xxdjc3NlFCWUF2elhWL2RhbDFRZUEyUXl1S2picHpwZHplOHlIT09hZGZvaFkzcldSWlhXaEhzY3RuNW1sUDlNWndEbVgzUHZIK3pkOGd3Tkx0a2RMSnRNTkFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzAxNzYzMDM3CWZpbGU6Q293c2F5LmFwcC50YXIuZ3oKQkM1aGUxRnFOc2R0cUxNaFo5eXYzM1pvRFhRQ2hrTGQrNlZ3bGJVTHlBOUlaZnZ5d2RJM1dCdGlPUmV1anpRTHlScjBpbWZRL0J6MGxmb3d1WHhOQkE9PQo=",
+      "url": "https://github.com/e253/cowsay/releases/download/v0.0.1/Cowsay_x64.app.tar.gz"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNEpqN2xxdjc3NmNhMW9EcmtKZVF6dHRyNWJWWlFZOHRvRXp3QnNVL1pPNXJWTnZFeEQ0aTFnVXBiT2lZdWVFZkpJSzMyS21zU2ZidHAzemZjeDhsSmNZckVwbm9td0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzAxNzYzMDUwCWZpbGU6Y293c2F5XzAuMC4xX2FtZDY0LkFwcEltYWdlLnRhci5negpYZnQ3V0MvelY0SmVxaGJNQmEvVGgwcFdlZmE0SUczUlVwMk9pdVIwaTM5MmFjcXBISEdMVEszMFdqV3VuZ0JweGtSbFZmRU1zLzJrbjVpeUdsYWZBQT09Cg==",
+      "url": "https://github.com/e253/cowsay/releases/download/v0.0.1/cowsay_0.0.1_amd64.AppImage.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNEpqN2xxdjc3NmU3MTdsamNrVzZ5RWRkSGdORmkyU2RPTGd5dldnekRyM2RLbU1STXVGdUdmZ0hsbHVnTXFMdGJVVW5tRFlKb09PSzlOTVlwaW5wYjZrN2psZkFjQUFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzAxNzYzMTYwCWZpbGU6Q293c2F5XzAuMC4xX3g2NF9lbi1VUy5tc2kuemlwClZieXFNUmY2ZFZBWldWODlZYWVDTTQ0QVhJaXE1aDY3U3MrVHJ3QUswVTdzRlRraE1TeDNTeUV0TmdVZUx5dHRIaTlJanRXdG93cWRrMFE3b1d1OUR3PT0K",
+      "url": "https://github.com/e253/cowsay/releases/download/v0.0.1/Cowsay_0.0.1_x64_en-US.msi.zip"
+    }
+  }
+}
