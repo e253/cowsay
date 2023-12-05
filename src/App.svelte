@@ -1,11 +1,14 @@
 <script lang="ts">
   import { onUpdaterEvent, checkUpdate, installUpdate } from '@tauri-apps/api/updater'
-  import { relaunch } from '@tauri-apps/api/process'
+  import { getVersion } from '@tauri-apps/api/app'
   import { onMount } from 'svelte'
 
   let updateState: 'noUpdates' | 'updateAvailable' | 'updateDownloading' | 'restarting' = "noUpdates";
-
+  let version: string
+  let newVersion: string | undefined
   onMount(async () => {
+    version = await getVersion()
+
     const unlisten = await onUpdaterEvent(({ error, status }) => {
       console.log('Updater event', error, status)
     })
@@ -19,6 +22,7 @@
         console.log(
           `Installing update ${manifest?.version}, ${manifest?.date}, ${manifest?.body}`
         )
+        newVersion = manifest?.version
         updateState = 'updateDownloading';
         // Install the update. This will also restart the app on Windows!
         await installUpdate()
@@ -64,12 +68,14 @@
 
 <div class="container update-status">
   {#if updateState === "noUpdates"}
-    <p>No Updates Available</p>
+    <p>
+      No Updates Available (v{version})
+    </p>
   {:else if updateState === "updateAvailable"}
-    <p>Update Available!</p>
+    <p>Update Available! (v{newVersion})</p>
   {:else if updateState === "updateDownloading"}
-    <p>Update is Beind Downloaded</p>
+    <p>Version {newVersion} is Beind Downloaded</p>
   {:else}
-    <p>Please Restart for the Update to Take Effect</p>
+    <p>Please Restart app to upgrade to version {newVersion}</p>
   {/if}
 </div>
