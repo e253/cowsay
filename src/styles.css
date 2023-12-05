@@ -120,3 +120,16 @@ button {
     background-color: #0f0f0f69;
   }
 }
+
+.update-status p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  background-color: #7a5901;
+  width: 150px;
+  padding: .5rem;
+  border-radius: .5rem;
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+}

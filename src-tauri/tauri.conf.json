@@ -10,6 +10,13 @@
     "version": "0.0.0"
   },
   "tauri": {
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://e253.github.io/cowsay/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEU5RkJGRUFBRTUzRTI2MzgKUldRNEpqN2xxdjc3NmNNRHZqL1o1NXNXZTdRZTJ2RzFhYUJiSGZUK1h5TDFINFZlUnBCcGNxbmEK"
+    },
     "allowlist": {
       "all": false,
       "shell": {
