@@ -1,11 +1,15 @@
 <script lang="ts">
-  import { checkUpdate, installUpdate } from '@tauri-apps/api/updater'
+  import { onUpdaterEvent, checkUpdate, installUpdate } from '@tauri-apps/api/updater'
   import { relaunch } from '@tauri-apps/api/process'
   import { onMount } from 'svelte'
 
   let updateState: 'noUpdates' | 'updateAvailable' | 'updateDownloading' | 'restarting' = "noUpdates";
 
   onMount(async () => {
+    const unlisten = await onUpdaterEvent(({ error, status }) => {
+      console.log('Updater event', error, status)
+    })
+
     try {
       const { shouldUpdate, manifest } = await checkUpdate()
 
@@ -22,11 +26,13 @@
         updateState = 'restarting'
         // On macOS and Linux you will need to restart the app manually.
         // You could use this step to display another confirmation dialog.
-        await relaunch()
+        // await relaunch()
       }
     } catch (error) {
       console.error(error)
-    }  
+    }
+
+    unlisten();
   })
 
   let name = ""
