@@ -396,7 +396,7 @@ dependencies = [
 
 [[package]]
 name = "cowsay"
-version = "0.0.0"
+version = "0.0.3"
 dependencies = [
  "tauri",
  "tauri-build",
