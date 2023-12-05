@@ -1,7 +1,11 @@
 <script lang="ts">
+  import Updater from "./Updater.svelte";
+
   let name = ""
   let greetMsg = ""
 </script>
+
+<Updater />
 
 <main class="container" >
   <div class="cow">

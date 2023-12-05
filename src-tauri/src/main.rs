@@ -5,6 +5,10 @@ fn main() {
     tauri::Builder::default()
         .plugin(tauri_plugin_window::init())
         .plugin(tauri_plugin_shell::init())
+        .setup(|app| {
+            app.handle().plugin(tauri_plugin_updater::Builder::new().build())?;
+            Ok(())
+        })
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
