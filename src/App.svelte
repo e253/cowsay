@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { invoke } from '@tauri-apps/api/tauri'
   import { onUpdaterEvent, checkUpdate, installUpdate } from '@tauri-apps/api/updater'
   import { getVersion } from '@tauri-apps/api/app'
   import { onMount } from 'svelte'
@@ -14,6 +15,8 @@
     })
 
     try {
+      console.log(await invoke("check"))
+/*
       const { shouldUpdate, manifest } = await checkUpdate()
 
       if (shouldUpdate) {
@@ -32,10 +35,10 @@
         // You could use this step to display another confirmation dialog.
         // await relaunch()
       }
+*/
     } catch (error) {
       console.error(error)
     }
-
     unlisten();
   })
 
